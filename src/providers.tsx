@@ -1,14 +1,14 @@
 import type { ReactNode } from 'react';
 
+import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
-import Routes from './routes/index.routes';
+import { store } from './features/store';
 
 export default function Providers({ children }: { children: ReactNode }) {
   return (
     <BrowserRouter>
-      <Routes />
-      {children}
+      <Provider store={store}>{children}</Provider>
     </BrowserRouter>
   );
 }

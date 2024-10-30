@@ -1,3 +1,10 @@
+import Providers from './providers';
+import AppRouter from './routes/index.routes';
+
 export default function App() {
-  return <></>;
+  return (
+    <Providers>
+      <AppRouter />
+    </Providers>
+  );
 }

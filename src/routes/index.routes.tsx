@@ -6,10 +6,11 @@ import {
 } from 'react-router-dom';
 
 import BaseLayout from '../layouts/base/base.layout';
-import Form from '../pages/form/form.page';
-import Weather from '../pages/weather/weather.page';
+import Form from '../views/form/form.view';
+import CityWeather from '../views/weather/city/city-weather.view';
+import Weather from '../views/weather/weather.view';
 
-export default function Routes() {
+export default function AppRouter() {
   return (
     <ReactRouterRoutes>
       <Route
@@ -20,8 +21,12 @@ export default function Routes() {
         }
       >
         <Route index element={<Navigate to='weather' />} />
-        <Route path='weather' element={<Weather />} />
+        <Route path='weather' element={<Outlet />}>
+          <Route index element={<Weather />} />
+          <Route path=':city' element={<CityWeather />} />
+        </Route>
         <Route path='form' element={<Form />} />
+        <Route path='*' element={<Navigate to='weather' />} />
       </Route>
     </ReactRouterRoutes>
   );

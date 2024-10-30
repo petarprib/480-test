@@ -2,14 +2,13 @@ import { StrictMode } from 'react';
 
 import { createRoot } from 'react-dom/client';
 
-import './styles/index.css';
 import App from './app.tsx';
-import Providers from './providers.tsx';
+
+import './services/i18n/i18n.config.ts';
+import './styles/index.scss';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Providers>
-      <App />
-    </Providers>
+    <App />
   </StrictMode>,
 );
