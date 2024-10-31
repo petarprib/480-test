@@ -3,5 +3,7 @@
   "toronto": "Toronto",
   "singapore": "Singapore",
   "select_city": "Select a city from the sidebar",
-  "weather": "Weather"
+  "weather": "Weather",
+  "city_forecast": "Forecast for {{city}}",
+  "error_fetching": "Error fetching data, please try again"
 }

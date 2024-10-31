@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
-export default function Weather() {
+export default function ErrorFetching() {
   const { t } = useTranslation();
 
-  return <div>{t('select_city')}</div>;
+  return <h1>{t('error_fetching')}</h1>;
 }

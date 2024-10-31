@@ -3,5 +3,7 @@
   "toronto": "Toronto",
   "singapore": "Singapur",
   "select_city": "Seleccione una ciudad de la barra lateral",
-  "weather": "Tiempo"
+  "weather": "Tiempo",
+  "city_forecast": "Pronóstico para {{city}}",
+  "error_fetching": "Error obteniendo datos, inténtelo de nuevo"
 }
