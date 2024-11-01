@@ -2,8 +2,9 @@
   "london": "London",
   "toronto": "Toronto",
   "singapore": "Singapore",
-  "select_city": "Select a city from the sidebar",
+  "select_city": "Select a city from the menu",
   "weather": "Weather",
   "city_forecast": "Forecast for {{city}}",
-  "error_fetching": "Error fetching data, please try again"
+  "error_fetching": "Error fetching data, please try again",
+  "form": "Form"
 }
