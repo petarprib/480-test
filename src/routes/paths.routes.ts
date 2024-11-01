@@ -1,6 +1,6 @@
-const routes = {
+const paths = {
   forecast: 'forecast',
   form: 'form',
 };
 
-export default routes;
+export default paths;

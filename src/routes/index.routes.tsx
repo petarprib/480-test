@@ -1,6 +1,6 @@
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 
-import routes from './routes.constants';
+import paths from './paths.routes';
 import BaseLayout from '../layouts/base/base.layout';
 import City from '../views/forecast/city/city.view';
 import Forecast from '../views/forecast/forecast.view';
@@ -16,13 +16,13 @@ export default function AppRouter() {
           </BaseLayout>
         }
       >
-        <Route index element={<Navigate to={routes.forecast} />} />
-        <Route path={routes.forecast} element={<Outlet />}>
+        <Route index element={<Navigate to={paths.forecast} />} />
+        <Route path={paths.forecast} element={<Outlet />}>
           <Route index element={<Forecast />} />
           <Route path=':city' element={<City />} />
         </Route>
-        <Route path={routes.form} element={<Form />} />
-        <Route path='*' element={<Navigate to={routes.forecast} />} />
+        <Route path={paths.form} element={<Form />} />
+        <Route path='*' element={<Navigate to={paths.forecast} />} />
       </Route>
     </Routes>
   );
