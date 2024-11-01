@@ -9,7 +9,7 @@ import Loading from './components/loading.component';
 import { availableCities } from '../../../constants';
 import { useGetForecastQuery } from '../../../features/forecast/forecast.api';
 
-import './city.scss';
+import './city-view.scss';
 
 export default function City() {
   const { city } = useParams();
@@ -43,7 +43,7 @@ export default function City() {
   if (forecast) {
     return (
       <div className='city-forecast-wrapper'>
-        <h1 className='city-forecast-wrapper__title'>
+        <h1 className='page-title city-forecast-wrapper__title'>
           {t('city_forecast', { city: t(city!) })}
         </h1>
         <CityWeatherList forecast={forecast} />

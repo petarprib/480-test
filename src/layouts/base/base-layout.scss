@@ -3,27 +3,27 @@
 main {
   flex-grow: 1;
   width: 100%;
-  padding: 0 25px;
+  padding: 0 1.5rem;
   display: flex;
   justify-content: center;
 
   @media (max-width: $breakpoint-xs) {
-    padding: 0 10px;
+    padding: 0 0.6rem;
   }
 }
 
-.header {
+#header {
   min-height: $header-height;
   display: flex;
-  padding: 0 25px;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  gap: 20px;
+  gap: 1.25rem;
 
   @media (max-width: $breakpoint-xs) {
-    padding: 0 10px;
+    padding: 0 0.6rem;
   }
 }
 
@@ -31,7 +31,7 @@ main {
   height: 100%;
   z-index: 500;
   background-color: #ffffff;
-  padding: 0 25px;
+  padding: 0 1.5rem;
   position: fixed;
   width: 300px;
   top: 0;
@@ -42,7 +42,7 @@ main {
   }
 
   @media (max-width: $breakpoint-xs) {
-    padding: 0 10px;
+    padding: 0 0.6rem;
     width: 100%;
   }
 
@@ -63,7 +63,7 @@ main {
   }
 
   &__menu-wrapper {
-    padding: 25px 0;
+    padding: 1.5rem 0;
 
     &__menu-item {
       list-style-type: none;

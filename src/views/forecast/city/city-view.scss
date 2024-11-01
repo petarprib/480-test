@@ -4,17 +4,16 @@
   width: 400px;
 
   &__title {
-    font-size: 1.75rem;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
   }
 }
 
 .weather-card {
   border: solid 1px #c4c4c4;
   border-radius: 20px;
-  margin-bottom: 50px;
-  padding: 0px 15px 10px 15px;
+  margin-bottom: 3rem;
+  padding: 0 1rem 0.6rem 1rem;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 

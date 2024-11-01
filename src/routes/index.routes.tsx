@@ -1,9 +1,4 @@
-import {
-  Navigate,
-  Outlet,
-  Routes as ReactRouterRoutes,
-  Route,
-} from 'react-router-dom';
+import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 
 import BaseLayout from '../layouts/base/base.layout';
 import City from '../views/forecast/city/city.view';
@@ -12,7 +7,7 @@ import Form from '../views/form/form.view';
 
 export default function AppRouter() {
   return (
-    <ReactRouterRoutes>
+    <Routes>
       <Route
         element={
           <BaseLayout>
@@ -28,6 +23,6 @@ export default function AppRouter() {
         <Route path='form' element={<Form />} />
         <Route path='*' element={<Navigate to='forecast' />} />
       </Route>
-    </ReactRouterRoutes>
+    </Routes>
   );
 }

@@ -11,7 +11,7 @@ export default function Header() {
   const dispatch = useDispatch();
 
   return (
-    <header className='header'>
+    <header id='header'>
       <IconButton
         icon={faBars}
         onClick={() => dispatch(setIsSidebarOpen(true))}
