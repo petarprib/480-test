@@ -1,0 +1,13 @@
+.icon-button {
+  font-size: 25px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: solid 2px black;
+    border-radius: 4px;
+  }
+}

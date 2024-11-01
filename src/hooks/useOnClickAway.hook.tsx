@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 
-export function useClickAway<T extends HTMLElement>(onClickAway: () => void) {
+export default function useOnClickAway<T extends HTMLElement>(
+  onClickAway: () => void,
+) {
   const ref = useRef<T>(null);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-@use '../../../styles/variables.scss' as *;
+@use '../../styles/variables.scss' as *;
 
 main {
   flex-grow: 1;
@@ -16,21 +16,14 @@ main {
   min-height: $header-height;
   display: flex;
   padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
 
   @media (max-width: $breakpoint-xs) {
     padding: 0 10px;
-  }
-
-  &__menu-and-lang {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    gap: 20px;
-
-    &__menu {
-      font-size: 25px;
-    }
   }
 }
 
@@ -43,24 +36,6 @@ main {
   width: 300px;
   top: 0;
   bottom: 0;
-
-  &__top {
-    height: $header-height;
-    display: flex;
-    align-items: center;
-
-    &__close {
-      font-size: 25px;
-    }
-  }
-
-  &__main {
-    padding: 25px 0;
-
-    &__navigation {
-      list-style-type: none;
-    }
-  }
 
   @media (min-width: $breakpoint-xs) {
     border-right: solid 1px #d1cfcf;
@@ -79,5 +54,19 @@ main {
   &--open {
     left: 0;
     transition: left 1s;
+  }
+
+  &__top {
+    height: $header-height;
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-wrapper {
+    padding: 25px 0;
+
+    &__menu-item {
+      list-style-type: none;
+    }
   }
 }

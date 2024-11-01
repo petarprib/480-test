@@ -1,9 +1,9 @@
 import { type ReactNode } from 'react';
 
-import Header from './components/header.component';
+import Header from './components/header/header.component';
 import Sidebar from './components/sidebar/sidebar.component';
 
-import './styles/base-layout.scss';
+import './base-layout.scss';
 
 type BaseLayoutProps = {
   children: ReactNode;
