@@ -1,5 +1,3 @@
-import type { ReactNode } from 'react';
-
 import {
   FormControl,
   MenuItem,
@@ -9,7 +7,7 @@ import {
 
 type SelectInputProps = {
   value: string;
-  onChange: (event: SelectChangeEvent<string>, child: ReactNode) => void;
+  onChange: (event: SelectChangeEvent<string>) => void;
   options: {
     label: string;
     value: string;

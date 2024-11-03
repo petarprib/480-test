@@ -1,7 +1,11 @@
-export default function Form() {
+import Form from './components/form.component';
+
+import './form-view.scss';
+
+export default function FormView() {
   return (
-    <div>
-      <h1>Form</h1>
+    <div className='form-view'>
+      <Form />
     </div>
   );
 }

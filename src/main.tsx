@@ -5,7 +5,7 @@ import { createRoot } from 'react-dom/client';
 import App from './app.tsx';
 import Providers from './providers.tsx';
 
-import './services/i18n/i18n.config.ts';
+import './services/locale/i18n.config.ts';
 import './styles/index.scss';
 import './styles/typography.scss';
 

@@ -1,0 +1,37 @@
+{
+  "send": "Send",
+  "form_fields": {
+    "name": {
+      "label": "Name",
+      "errors": {
+        "required": "This field is required",
+        "invalid": "Name can only contain letters, spaces, hyphens, and apostrophes"
+      }
+    },
+    "date_of_birth": {
+      "label": "Date of birth",
+      "errors": {
+        "required": "This field is required"
+      }
+    },
+    "city": {
+      "label": "City",
+      "errors": {
+        "required": "This field is required",
+        "invalid": "City can only contain letters, spaces, hyphens, and apostrophes"
+      }
+    },
+    "email": {
+      "label": "Email",
+      "errors": {
+        "required": "A valid email is required"
+      }
+    },
+    "phone": {
+      "label": "Phone number",
+      "errors": {
+        "invalid": "A valid number is required"
+      }
+    }
+  }
+}

@@ -11,13 +11,13 @@ import { useGetForecastQuery } from '../../../features/forecast/forecast.api';
 
 import './city-view.scss';
 
-export default function City() {
+export default function CityView() {
   const { city } = useParams();
   const navigate = useNavigate();
   const {
     t,
     i18n: { language },
-  } = useTranslation();
+  } = useTranslation('forecast');
 
   const isInvalidCity = !availableCities.some(
     (availableCity) => availableCity === city,

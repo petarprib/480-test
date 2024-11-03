@@ -1,0 +1,5 @@
+{
+  "select_city": "Selecciona una ciudad del menú",
+  "city_forecast": "Pronóstico para {{city}}",
+  "error_fetching": "Error obteniendo datos, inténtelo de nuevo"
+}

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 
 import IconButton from '../../../../components/icon-button/icon-button.component';
-import SelectInput from '../../../../components/inputs/select/select.input';
+import SelectInput from '../../../../components/inputs/select/select-input.component';
 import { setIsSidebarOpen } from '../../../../features/ui/ui.slice';
 
 export default function Header() {

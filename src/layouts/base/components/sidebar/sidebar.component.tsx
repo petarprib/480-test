@@ -5,7 +5,7 @@ import SidebarMenu from './sidebar-menu.component';
 import IconButton from '../../../../components/icon-button/icon-button.component';
 import type { RootState } from '../../../../features/store';
 import { setIsSidebarOpen } from '../../../../features/ui/ui.slice';
-import useOnClickAway from '../../../../hooks/useOnClickAway.hook';
+import useOnClickAway from '../../../../hooks/use-on-click-away.hook';
 
 export default function Sidebar() {
   const { isSidebarOpen } = useSelector((state: RootState) => state.ui);

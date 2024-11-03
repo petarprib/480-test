@@ -1,10 +1,13 @@
+import { Suspense } from 'react';
+
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 
 import paths from './paths.routes';
 import BaseLayout from '../layouts/base/base.layout';
-import City from '../views/forecast/city/city.view';
-import Forecast from '../views/forecast/forecast.view';
-import Form from '../views/form/form.view';
+import CityView from '../views/forecast/city/city.view';
+import Loading from '../views/forecast/city/components/loading.component';
+import ForecastView from '../views/forecast/forecast.view';
+import FormView from '../views/form/form.view';
 
 export default function AppRouter() {
   return (
@@ -17,11 +20,18 @@ export default function AppRouter() {
         }
       >
         <Route index element={<Navigate to={paths.forecast} />} />
-        <Route path={paths.forecast} element={<Outlet />}>
-          <Route index element={<Forecast />} />
-          <Route path=':city' element={<City />} />
+        <Route
+          path={paths.forecast}
+          element={
+            <Suspense fallback={<Loading />}>
+              <Outlet />
+            </Suspense>
+          }
+        >
+          <Route index element={<ForecastView />} />
+          <Route path=':city' element={<CityView />} />
         </Route>
-        <Route path={paths.form} element={<Form />} />
+        <Route path={paths.form} element={<FormView />} />
         <Route path='*' element={<Navigate to={paths.forecast} />} />
       </Route>
     </Routes>

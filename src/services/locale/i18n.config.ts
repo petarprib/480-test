@@ -11,6 +11,9 @@ i18n
     debug: false,
     fallbackLng: 'en',
     supportedLngs: ['en', 'es'],
+    backend: {
+      loadPath: '/translations/{{lng}}/{{ns}}.json',
+    },
   });
 
 export default i18n;

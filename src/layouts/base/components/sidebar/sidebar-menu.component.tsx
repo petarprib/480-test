@@ -5,7 +5,7 @@ import { availableCities } from '../../../../constants';
 import paths from '../../../../routes/paths.routes';
 
 export default function SidebarMenu() {
-  const { t } = useTranslation();
+  const { t } = useTranslation('sidebar');
 
   return (
     <nav className='sidebar__menu-wrapper'>
@@ -14,11 +14,11 @@ export default function SidebarMenu() {
           <li key={city} className='sidebar__menu-wrapper__menu-item'>
             <SidebarMenuItem
               to={`/${paths.forecast}/${city}`}
-              label={t(city)}
+              label={t(`menu.${city}`)}
             />
           </li>
         ))}
-        <SidebarMenuItem to={`/${paths.form}`} label={t('form')} />
+        <SidebarMenuItem to={`/${paths.form}`} label={t('menu.form')} />
       </ul>
     </nav>
   );

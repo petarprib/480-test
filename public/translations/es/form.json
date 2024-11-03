@@ -1,0 +1,37 @@
+{
+  "send": "Enviar",
+  "form_fields": {
+    "name": {
+      "label": "Nombre",
+      "errors": {
+        "required": "Campo obligatorio",
+        "invalid": "El nombre solo puede contener letras, espacios, guiones, y comillas"
+      }
+    },
+    "date_of_birth": {
+      "label": "Fecha de nacimiento",
+      "errors": {
+        "required": "Campo obligatorio"
+      }
+    },
+    "city": {
+      "label": "Ciudad",
+      "errors": {
+        "required": "Campo obligatorio",
+        "invalid": "La ciudad solo puede contener letras, espacios, guiones, y comillas"
+      }
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "errors": {
+        "required": "Un correo electrónico válido es obligatorio"
+      }
+    },
+    "phone": {
+      "label": "Número de teléfono",
+      "errors": {
+        "invalid": "Un número válido es obligatorio"
+      }
+    }
+  }
+}
