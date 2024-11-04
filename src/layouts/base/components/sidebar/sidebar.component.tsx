@@ -1,4 +1,5 @@
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 
 import SidebarMenu from './sidebar-menu.component';
@@ -13,6 +14,7 @@ export default function Sidebar() {
   const sidebarRef = useOnClickAway<HTMLDivElement>(() =>
     dispatch(setIsSidebarOpen(false)),
   );
+  const { t } = useTranslation('sidebar');
 
   return (
     <div
@@ -23,6 +25,7 @@ export default function Sidebar() {
         <IconButton
           icon={faXmark}
           onClick={() => dispatch(setIsSidebarOpen(false))}
+          ariaLabel={t('close_sidebar')}
         />
       </div>
       <SidebarMenu />

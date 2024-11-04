@@ -1,11 +1,11 @@
 import { Button, Stack } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 
-import { formSchema, type FormSchema } from './form.types';
 import DateInput from '../../../components/inputs/date/date-input.component';
 import PhoneInput from '../../../components/inputs/phone/phone-input.component';
 import TextInput from '../../../components/inputs/text/text-input.component';
 import useRHF from '../../../hooks/use-rhf.hook';
+import { formSchema, type FormSchema } from '../form.types';
 
 export default function Form() {
   const { t } = useTranslation('form');

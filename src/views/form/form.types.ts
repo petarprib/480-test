@@ -5,7 +5,6 @@ export const formSchema = z
   .object({
     name: z
       .string()
-
       .min(1, { message: 'form_fields.name.errors.required' })
       .regex(/^[a-zA-Z' -]+$/, {
         message: 'form_fields.name.errors.invalid',
@@ -13,7 +12,6 @@ export const formSchema = z
     date_of_birth: z.date().nullable(),
     city: z
       .string()
-
       .min(2, { message: 'form_fields.city.errors.required' })
       .regex(/^[a-zA-Z' -]+$/, {
         message: 'form_fields.city.errors.invalid',

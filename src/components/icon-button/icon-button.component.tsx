@@ -6,9 +6,14 @@ import './icon-button.scss';
 type IconButtonProps = {
   icon: IconDefinition;
   onClick: () => void;
+  ariaLabel: string;
 };
 
-export default function IconButton({ icon, onClick }: IconButtonProps) {
+export default function IconButton({
+  icon,
+  onClick,
+  ariaLabel,
+}: IconButtonProps) {
   return (
     <FontAwesomeIcon
       icon={icon}
@@ -17,6 +22,7 @@ export default function IconButton({ icon, onClick }: IconButtonProps) {
       className='icon-button'
       tabIndex={0}
       role='button'
+      aria-label={ariaLabel}
     />
   );
 }
