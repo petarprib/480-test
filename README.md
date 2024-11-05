@@ -10,6 +10,7 @@ pnpm dev
 
 # Notas
 
+- Aprox 30h de trabajo
 - Opté por una organización del proyecto más vertical
 - Para agilizar el desarrollo, utilicé principalmente librerías de terceros en la parte opcional, mientras que la parte principal está construida principalmente con SASS
 - Hace tiempo que no trabajo directamente con estilos basados en SASS, así que probablemente haya margen para optimizar el uso de mixin, variables, extend, etc. Lo considero un área de mejora para futuras iteraciones
