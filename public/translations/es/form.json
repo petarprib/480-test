@@ -5,7 +5,7 @@
       "label": "Nombre",
       "errors": {
         "required": "Campo obligatorio",
-        "invalid": "El nombre solo puede contener letras, espacios, guiones, y comillas"
+        "invalid": "El nombre solo puede contener letras, espacios, guiones y comillas"
       }
     },
     "date_of_birth": {
@@ -18,7 +18,7 @@
       "label": "Ciudad",
       "errors": {
         "required": "Campo obligatorio",
-        "invalid": "La ciudad solo puede contener letras, espacios, guiones, y comillas"
+        "invalid": "La ciudad solo puede contener letras, espacios, guiones y comillas"
       }
     },
     "email": {

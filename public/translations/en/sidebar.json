@@ -1,9 +1,4 @@
 {
-  "menu": {
-    "london": "London",
-    "toronto": "Toronto",
-    "singapore": "Singapore",
-    "form": "Form"
-  },
+  "form": "Form",
   "close_sidebar": "Close sidebar"
 }

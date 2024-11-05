@@ -30,7 +30,7 @@ main {
 .sidebar {
   height: 100%;
   z-index: 500;
-  background-color: #ffffff;
+  background-color: $background-color;
   padding: 0 1.5rem;
   position: fixed;
   width: 300px;
@@ -64,7 +64,7 @@ main {
   }
 
   @media (min-width: $breakpoint-xs) {
-    border-right: solid 1px #d1cfcf;
+    border-right: solid 1px $border-color;
   }
 
   @media (max-width: $breakpoint-xs) {
@@ -74,7 +74,7 @@ main {
 
   &--closed {
     left: -100%;
-    transition: left 2s;
+    transition: left 1s;
   }
 
   &--open {

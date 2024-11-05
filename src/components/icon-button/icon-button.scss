@@ -1,3 +1,5 @@
+@use '../../styles/variables.scss' as *;
+
 .icon-button {
   font-size: 1.5rem;
   cursor: pointer;
@@ -7,7 +9,7 @@
   }
 
   &:focus-visible {
-    outline: solid 2px black;
+    outline: solid 2px $outline-color;
     border-radius: 4px;
   }
 }

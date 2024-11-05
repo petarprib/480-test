@@ -11,29 +11,24 @@ import FormView from '../views/form/form.view';
 
 export default function AppRouter() {
   return (
-    <Routes>
-      <Route
-        element={
-          <BaseLayout>
-            <Outlet />
-          </BaseLayout>
-        }
-      >
-        <Route index element={<Navigate to={paths.forecast} />} />
+    <Suspense>
+      <Routes>
         <Route
-          path={paths.forecast}
           element={
-            <Suspense fallback={<Loading />}>
+            <BaseLayout>
               <Outlet />
-            </Suspense>
+            </BaseLayout>
           }
         >
-          <Route index element={<ForecastView />} />
-          <Route path=':city' element={<CityView />} />
+          <Route index element={<Navigate to={paths.forecast} />} />
+          <Route path={paths.forecast} element={<Outlet />}>
+            <Route index element={<ForecastView />} />
+            <Route path=':city' element={<CityView />} />
+          </Route>
+          <Route path={paths.form} element={<FormView />} />
+          <Route path='*' element={<Navigate to={paths.forecast} />} />
         </Route>
-        <Route path={paths.form} element={<FormView />} />
-        <Route path='*' element={<Navigate to={paths.forecast} />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </Suspense>
   );
 }

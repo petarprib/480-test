@@ -1,9 +1,4 @@
 {
-  "menu": {
-    "london": "Londres",
-    "toronto": "Toronto",
-    "singapore": "Singapur",
-    "form": "Formulario"
-  },
+  "form": "Formulario",
   "close_sidebar": "Cierra barra lateral"
 }

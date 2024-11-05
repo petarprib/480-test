@@ -4,16 +4,7 @@ import {
   type FetchBaseQueryError,
 } from '@reduxjs/toolkit/query/react';
 
-import type { Forecast } from './forecast.types';
-
-type Coordinates = {
-  lat: number;
-  lon: number;
-};
-
-type ForecastRes = {
-  list: Forecast[];
-};
+import type { Coordinates, Forecast, ForecastRes } from './forecast.types';
 
 const forecastApi = createApi({
   reducerPath: 'forecastApi',

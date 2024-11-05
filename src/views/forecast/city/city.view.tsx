@@ -17,7 +17,7 @@ export default function CityView() {
   const {
     t,
     i18n: { language },
-  } = useTranslation('forecast');
+  } = useTranslation(['forecast', 'common']);
 
   const isInvalidCity = !availableCities.some(
     (availableCity) => availableCity === city,
@@ -44,7 +44,10 @@ export default function CityView() {
     return (
       <div className='city-forecast-wrapper'>
         <h1 className='page-title city-forecast-wrapper__title'>
-          {t('city_forecast', { city: t(city!) })}
+          {t('city_forecast', {
+            ns: 'forecast',
+            city: t(city!, { ns: 'common' }),
+          })}
         </h1>
         <CityWeatherList forecast={forecast} />
       </div>
